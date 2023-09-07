@@ -14,8 +14,6 @@ public class Product {
     @NotEmpty
     private String name;
 
-    private Double price;
-
     private Integer quantity;
 
     public String getName() {
@@ -26,13 +24,6 @@ public class Product {
         this.name = name;
     }
 
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
 
     public Integer getQuantity() {
         return quantity;
@@ -45,7 +36,6 @@ public class Product {
     @Override
     public String toString() {
         return name + '\'' +
-                ", price=" + price +
                 ", quantity=" + quantity;
     }
 }
